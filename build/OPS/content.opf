@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookId" version="2.0">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:opf="http://www.idpf.org/2007/opf">
+      <dc:title>First Test Book</dc:title>
+      <dc:creator>Lynne Thompson-Yates</dc:creator>
+      <dc:contributor>None</dc:contributor>
+      <dc:language>en</dc:language>
+      <dc:identifier id="BookId">1234567890</dc:identifier>
+      <dc:subject>Test e-Pub</dc:subject>
+      <dc:description>This is only a test.</dc:description>
+      <dc:relation>http://www.ilynne.com</dc:relation>
+      <dc:publisher>Self</dc:publisher>
+      <dc:date>10 April 2010</dc:date>
+      <dc:relation>http://www.ilynne.com</dc:relation>
+        <meta name="cover" content="CoverDesign"/>
+    </metadata>
+    <manifest>
+        <item id="toc" href="toc.ncx"
+          media-type="application/x-dtbncx+xml" />
+        <item id="CoverDesign" href="CoverDesign.jpg"
+          media-type="image/jpeg" />
+        <item id="CoverPage" href="CoverPage.html"
+          media-type="application/xhtml+xml" />
+        <item id="TableOfContents" href="TableOfContents.html"
+          media-type="application/xhtml+xml" />
+        <item id="style" href="style.css"
+          media-type="text/css" />
+        <item id="source_ch03" href="source/ch03.html"
+          media-type="application/xhtml+xml" />
+    </manifest>
+    <spine toc="toc">
+        <itemref idref="CoverPage" linear="no" />
+        <itemref idref="TableOfContents" />
+        <itemref idref="source_ch03" />
+    </spine>
+    <guide>
+        <reference type="cover" title="Cover Page"
+            href="CoverPage.html" />
+    </guide>
+</package>
